@@ -206,9 +206,10 @@ header .header-content .header-content-inner hr {
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 2px #000;
 }
 
 @media(min-width:768px) {
@@ -218,7 +219,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 80%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -235,7 +236,8 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 30px;
+        color: rgba(255,255,255,.9);
     }
 }
 
@@ -509,4 +511,17 @@ body {
     margin-right: auto;
     max-height: 50px;
     margin-bottom:20px;
+}
+
+.bg-dark {
+    margin-bottom: 85px;
+}
+
+.header-content-inner a {
+    opacity: 0;
+}
+
+header {
+    background-image: url(../img/header4.jpg);
+    /*background-image: url(../img/header7.jpg);*/
 }

@@ -45,4 +45,18 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    // Intro text letter by letter.
+    var showText = function (target, message, index, interval) {
+        if (index < message.length) {
+            $(target).append(message[index++]);
+            setTimeout(function () { showText(target, message, index, interval); }, interval);
+        }
+    };
+    showText("#intro-text", "Sveiki užsukę ;)", 0, 90);
+
+    // Intro button on delay.
+    setTimeout(function () { $('.header-content-inner a').animate({'opacity': 1}) }, 2000);
+
+
+
 })(jQuery); // End of use strict
