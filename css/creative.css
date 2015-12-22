@@ -555,7 +555,7 @@ header {
 .portfolio-modal .close-modal {
     position: absolute;
     background-color: transparent;
-    top: 35px;
+    top: 10px;
     right: 25px;
     cursor: pointer;
     font-size: 30px;
@@ -566,12 +566,17 @@ header {
 }
 
 .modal-body h2{
+    margin-top: 0;
     text-align: center;
 }
 
 .modal-body p {
     margin-top: 10px;
     text-align: center;
+}
+
+.modal-body button {
+    z-index: 1;
 }
 
 .modal-body button i{
