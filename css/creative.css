@@ -525,3 +525,55 @@ header {
     background-image: url(../img/header4.jpg);
     /*background-image: url(../img/header7.jpg);*/
 }
+
+.portfolio-box {
+    overflow-y: hidden;
+}
+
+.portfolio-box img{
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    /*transition: height .35s, width 0s, transform .35s;*/
+}
+
+.portfolio-box:hover img{
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+}
+
+.portfolio-box .portfolio-box-caption {
+    height: 20%;
+    z-index: -1;
+}
+.portfolio-modal {
+    padding: 10px;
+    display: none;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    background-color: transparent;
+    top: 35px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.modal-body h2{
+    text-align: center;
+}
+
+.modal-body p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.modal-body button i{
+    margin-right: 10px;
+}
