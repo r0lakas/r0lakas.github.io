@@ -575,7 +575,7 @@ header {
     text-align: center;
 }
 
-.modal-body button {
+.close-modal {
     z-index: 1;
 }
 
