@@ -52,7 +52,9 @@
             setTimeout(function () { showText(target, message, index, interval); }, interval);
         }
     };
-    showText("#intro-text", "Sveiki užsukę ;)", 0, 90);
+    $(window).load(function() {
+        showText("#intro-text", "Sveiki užsukę ;)", 0, 90);
+    });
 
     // Intro button on delay.
     setTimeout(function () { $('.header-content-inner a').animate({'opacity': 1}) }, 2000);
